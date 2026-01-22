@@ -10,7 +10,7 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           whileHover={{scale:1.2}}
           transition={{ duration: 0.8 }} className=""  >
-          <img src="public/WhatsApp Image 2026-01-19 at 7.23.10 PM.jpeg"/>
+          <img src="/WhatsApp Image 2026-01-19 at 7.23.10 PM.jpeg"/>
         </motion.div>
       <div className="max-w-3xl mx-auto text-center text-white">
 
