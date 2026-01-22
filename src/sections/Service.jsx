@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { services } from 'src/Data/ourservices.js';
+import { services } from '../Data/ourservices.js';
 
 
 // Stagger Animation Configuration
