@@ -14,9 +14,9 @@ export default function About() {
     <>
     <section className="bg-[#183A3B]">
     <section className="flex gap-4 mx-auto justify-center bg-[#183A3B]">
-    <motion.img whileHover={{y:-20}} src="src/assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png" alt="About Us Image" className="mt-12 rounded-xl  h-20 "/>
-    <motion.img whileHover={{y:-20}} src="src/assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png" alt="About Us Image" className=" mt-12 rounded-xl  h-20 "/>
-    <motion.img whileHover={{y:-20}} src="src/assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png" alt="About Us Image" className="mt-12 rounded-xl  h-20 "/>
+    <motion.img whileHover={{y:-20}} src="../assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png" alt="About Us Image" className="mt-12 rounded-xl  h-20 "/>
+    <motion.img whileHover={{y:-20}} src="../assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png"alt="About Us Image" className=" mt-12 rounded-xl  h-20 "/>
+    <motion.img whileHover={{y:-20}} src="../assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png"alt="About Us Image" className="mt-12 rounded-xl  h-20 "/>
     </section>
     <motion.section
     ref={ref}
@@ -41,9 +41,9 @@ You can find more details in the following pages. This website is updated regula
    </motion.section>
    <Puzzle inView={inviewed}/>
     <section className="flex gap-4 mx-auto justify-center bg-[#183A3B]">
-    <motion.img whileHover={{y:-20}} src="src/assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png" alt="About Us Image" className=" rounded-xl  h-20 "/>
-    <motion.img whileHover={{y:-20}} src="src/assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png" alt="About Us Image" className="rounded-xl  h-20 "/>
-    <motion.img whileHover={{y:-20}} src="src/assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png" alt="About Us Image" className="rounded-xl  h-20 "/>
+    <motion.img whileHover={{y:-20}} src="../assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png" alt="About Us Image" className=" rounded-xl  h-20 "/>
+    <motion.img whileHover={{y:-20}} src="../assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png" alt="About Us Image" className="rounded-xl  h-20 "/>
+    <motion.img whileHover={{y:-20}} src="../assets/images/Puzzle_icon_in_iOS_Style-removebg-preview.png" alt="About Us Image" className="rounded-xl  h-20 "/>
     </section>
    </section>
     </>

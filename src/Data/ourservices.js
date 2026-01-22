@@ -1,10 +1,10 @@
 // 1. Import your local images at the top
-import imgSocial from 'D:/CSqaure/src/assets/images/socialmedia.jpg';
-import imgWeb from 'D:/CSqaure/src/assets/images/website.jpg';
-import imgVideo from 'D:/CSqaure/src/assets/images/videoediting.jpg';
-import imgShoot from 'D:/CSqaure/src/assets/images/shoot.jpg';
-import imgBrochure from 'D:/CSqaure/src/assets/images/brochure.jpg';
-import imgContent from 'D:/CSqaure/src/assets/images/Contentwriting.jpg';
+import imgSocial from '../assets/images/socialmedia.jpg';
+import imgWeb from '../assets/images/website.jpg';
+import imgVideo from '../assets/images/videoediting.jpg';
+import imgShoot from '../assets/images/shoot.jpg';
+import imgBrochure from '../assets/images/brochure.jpg';
+import imgContent from '../assets/images/Contentwriting.jpg';
 
 // 2. Use the variable names in the object
 export const services = [
