@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { pricingCategories } from './Data/ourservices';
+import { pricingCategories } from '../Data/ourservices';
 
 // --- CSS TO HIDE SCROLLBARS ---
 const hideScrollbarStyle = `
@@ -13,7 +13,7 @@ const hideScrollbarStyle = `
   }
 `;
 
-// --- ANIMATION VARIANTS (Fixed to prevent Horizontal Overflow) ---
+// --- ANIMATION VARIANTS ---
 const sectionVariants = {
   hidden: { opacity: 0 },
   visible: { 
@@ -42,8 +42,6 @@ const cardStaggerVariants = {
   }
 };
 
-// CHANGED: Removed 'x' movement, only using 'y' and 'scale'
-// This prevents the page from widening during animation
 const cardItemVariants = {
   hidden: { y: 30, opacity: 0, scale: 0.95 }, 
   visible: { 
@@ -69,7 +67,6 @@ const PricingSection = () => {
     if (!scrollContainerRef.current) return;
     const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
     setShowLeftArrow(scrollLeft > 0);
-    // Tolerance of 1px for calculation errors
     setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 1);
   };
 
@@ -89,14 +86,13 @@ const PricingSection = () => {
   };
 
   return (
-    // overflow-x-hidden on the section ensures no horizontal scrollbar ever appears on the page body
-    <section className="relative w-full py-20 bg-neutral-950 overflow-x-hidden min-h-screen flex flex-col justify-center">
+    <section id='pricing' className="relative w-full py-20  overflow-x-hidden min-h-screen flex flex-col justify-center">
       
-      {/* Inject Styles for hiding scrollbar */}
       <style>{hideScrollbarStyle}</style>
 
-      {/* Background Tint */}
-      <div className="absolute inset-0 bg-[#4b6455]/30 pointer-events-none" />
+      {/* --- BACKGROUND COLOR CHANGE HERE --- */}
+      {/* Changed color to #183A3B and opacity to /50 for a richer, darker look */}
+      <div className="absolute inset-0 bg-[#183A3B]/50 pointer-events-none" />
 
       <motion.div 
         variants={sectionVariants}
@@ -133,7 +129,7 @@ const PricingSection = () => {
                 {activeCategory.id === cat.id && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute inset-0 bg-emerald-600 rounded-full"
+                    className="absolute inset-0 bg-[#4b6455]/80 rounded-full"
                     transition={{ type: "spring", stiffness: 500, damping: 30 }}
                   />
                 )}
@@ -182,7 +178,6 @@ const PricingSection = () => {
             `}
           >
             <AnimatePresence mode="wait">
-              {/* Note: 'contents' display prevents this wrapper from interfering with flex layout */}
               <motion.div
                 key={activeCategory.id}
                 className="contents" 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { services } from './Data/ourservices';
+import { services } from 'D:/CSqaure/src/Data/ourservices.js'
 
 
 // Stagger Animation Configuration
@@ -28,7 +28,7 @@ const ServicesGallery = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div id="services" className="flex flex-col h-screen w-full  bg-[#4b6455]/30 text-white overflow-hidden scroll-mt-15">
+    <div id="services" className="flex flex-col h-screen w-full  bg-[#183A3B]/30 text-white overflow-hidden scroll-mt-15">
       
       {/* HEADER: FIXED ANIMATION */}
       <motion.header 
@@ -38,11 +38,17 @@ const ServicesGallery = () => {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="w-full px-8 md:px-20 py-6 shrink-0 z-30 border-b border-[#183A3B] bg-transparent"
       >
-        <div className="flex items-center justify-between">
-          <h1 className="text-xl md:text-2xl font-bold uppercase tracking-widest text-emerald-500">
-            Our Services
+        <motion.div
+         initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9 }}
+           className="flex items-center justify-between -mb-15">
+          <h1 className="text-6xl text-center mx-auto md:text-2xl font-bold uppercase tracking-widest text-emerald-500">
+            <motion.span 
+           
+            className='text-7xl'>Our Services</motion.span>
           </h1>
-        </div>
+        </motion.div>
       </motion.header>
 
       {/* BODY */}
