@@ -48,7 +48,7 @@ const SplashScreen = ({ onComplete }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-6xl font-bold font-serif tracking-tight mb-4"
         >
-          YOUR <span className="text-emerald-500">BRAND</span>
+          C<span className="text-emerald-500">SQUARE</span>
         </motion.h1>
 
         {/* LOADING BAR CONTAINER */}

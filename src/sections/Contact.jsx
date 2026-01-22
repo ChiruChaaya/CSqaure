@@ -102,6 +102,19 @@ const ContactSection = () => {
               </div>
               <span>(+91) 7975222177 / 7338604106</span>
             </div>
+            <div className="flex items-center gap-4 text-white/80">
+              <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10">
+                 <svg 
+                   className="w-5 h-5" 
+                   fill="none" 
+                   viewBox="0 0 24 24" 
+                   stroke="currentColor" 
+                   strokeWidth={2}
+                ><path strokeLinecap="round" strokeLinejoin="round" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M7.5 3h9a4.5 4.5 0 014.5 4.5v9a4.5 4.5 0 01-4.5 4.5h-9A4.5 4.5 0 013 16.5v-9A4.5 4.5 0 017.5 3z" />
+                </svg>
+              </div>
+              <span>(+91) 7975222177 / 7338604106</span>
+            </div>
           </div>
         </motion.div>
 
