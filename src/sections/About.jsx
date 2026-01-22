@@ -1,5 +1,5 @@
 import { motion,px,useInView,useScroll,useTransform } from "framer-motion";
-import puzzle from "..assets/puzzle.png";
+import puzzle from "..assets/images/puzzle.png ";
 import { useRef } from "react";
 import Puzzle from "../compenents/Puzzle";
 export default function About() {
@@ -16,8 +16,8 @@ export default function About() {
     <section className="bg-[#183A3B]">
     <section className="flex gap-4 mx-auto justify-center bg-[#183A3B]">
     <motion.img whileHover={{y:-20}} src={puzzle} alt="About Us Image" className="mt-12 rounded-xl  h-20 "/>
-    <motion.img whileHover={{y:-20}} src={puzzle} alt="About Us Image" className=" mt-12 rounded-xl  h-20 "/>
-    <motion.img whileHover={{y:-20}} src={puzzle} alt="About Us Image" className="mt-12 rounded-xl  h-20 "/>
+    <motion.img whileHover={{y:-20}} src={puzzle}alt="About Us Image" className=" mt-12 rounded-xl  h-20 "/>
+    <motion.img whileHover={{y:-20}} src={puzzle}alt="About Us Image" className="mt-12 rounded-xl  h-20 "/>
     </section>
     <motion.section
     ref={ref}
